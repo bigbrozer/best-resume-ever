@@ -70,6 +70,14 @@
         </div>
       </router-link>
     </div>
+    <div class="preview">
+      <router-link v-bind:to="'/resume/vinz'">
+        <div class="preview-wrapper">
+          <img src="../assets/preview/resume-vinz.png" />
+          <span>vinz</span>
+        </div>
+      </router-link>
+    </div>
   </div>
 </div>
 </template>
