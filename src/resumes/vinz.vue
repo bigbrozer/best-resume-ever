@@ -1,17 +1,18 @@
 <template>
   <div class="resume" id="resume2">
     <div class="left-column">
+      <!-- PORTRAIT -->
       <div>
         <div class="image center">
           <div class="img"></div>
         </div>
 
-        <div class="headline">
+        <div class="headline center-text">
           <span> {{ person.name.first }} {{ person.name.middle }} </span>
           <span class="uppercase"> {{ person.name.last }} </span>
         </div>
 
-        <p>
+        <p class="center-text">
           <span class="txt-full-white"> {{ person.position }} </span>
           <br/>
           <span> {{ person.contact.city }} </span>
@@ -33,17 +34,18 @@
         </div>
       </a>
 
-      <div class="block-marged txt-full-white">
+      <div v-if="person.contact.phone" class="block-marged txt-full-white">
         {{ person.contact.phone }}
       </div>
 
+      <!-- NETWORKS -->
       <div class="social-container">
         <h3>Networks</h3>
 
         <a v-if="person.contact.website"
           :href="person.contact.website">
 
-          <div class="block-marged txt-full-white">
+          <div v-if="person.contact.website" class="block-marged txt-full-white">
             <i class="fa fa-globe contact-icon"></i>
             {{ person.contact.website }}
           </div>
@@ -55,7 +57,7 @@
 
           <i class="fa fa-github contact-icon"></i>
           <span class="block-marged txt-full-white">
-            {{ person.contact.github }}
+            GitHub
           </span>
         </a>
 
@@ -65,7 +67,7 @@
 
           <i class="fa fa-twitter contact-icon"></i>
           <span class="block-marged txt-full-white">
-            {{ person.contact.twitter }}
+            Twitter
           </span>
         </a>
 
@@ -75,7 +77,7 @@
 
           <i class="fa fa-linkedin contact-icon"></i>
           <span class="block-marged txt-full-white">
-            {{ person.contact.linkedin }}
+            LinkedIn
           </span>
         </a>
 
@@ -104,6 +106,7 @@
         </a>
       </div>
 
+      <!-- HOBBIES -->
       <div class="hobbies-container">
         <h3>Hobbies</h3>
         <div class="hobbies-content">
@@ -123,6 +126,7 @@
     </div>
 
     <div class="right-column">
+      <!-- EXPERIENCES -->
       <div class="experience-section section">
         <div class="icon">
           <i class="material-icons small-icon">work</i>
@@ -142,6 +146,7 @@
         </div>
       </div>
 
+      <!-- EDUCATION -->
       <div class="education-section section">
         <div class="icon">
           <i class="material-icons">school</i>
@@ -240,10 +245,11 @@ export default Vue.component(name, getVueOptions(name));
 <style lang="less" scoped>
 
 @accent-color: #4c4d6d;
-@skill-master-color: #ffcf40;
-@skill-advanced-color: #005073;
-@skill-intermediate-color: #71c7ec;
-@skill-beginner-color: #017500;
+
+@skill-master-color: #dd5349;
+@skill-advanced-color: #dd9b40;
+@skill-intermediate-color: #5ac0dc;
+@skill-beginner-color: #5cb661;
 
 .resume {
   display: flex;
@@ -455,7 +461,6 @@ a {
 
 .skill-master {
   background-color: @skill-master-color;
-  color: black;
 }
 
 .skill-advanced {
@@ -464,7 +469,6 @@ a {
 
 .skill-intermediate {
   background-color: @skill-intermediate-color;
-  color: @accent-color;
 }
 
 .skill-beginner {
@@ -493,6 +497,7 @@ a {
 }
 
 .section {
+  page-break-before: always;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -554,9 +559,13 @@ a {
   margin-right:auto;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .image {
-  width:100px;
-  height:100px;
+  width:180px;
+  height:180px;
   margin-top:10px;
   margin-bottom:10px;
   .img {

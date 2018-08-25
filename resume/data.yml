@@ -3,7 +3,7 @@ name:
   first: Vincent
   middle:
   last: Besançon
-about: Hey !
+about: "Passion ♥ for Linux and Open source in general. Hacking game concept at spare time."
 position: System Engineer
 
 birth:
@@ -89,32 +89,42 @@ education:
 
 # skill level goes 0 to 100
 skills:
-- name: Linux
+- name: 🏆 Linux
   level: 100
-- name: Kubernetes
+- name: 🏆 Docker
   level: 100
-- name: Docker
+- name: 🏆 Python
   level: 100
-- name: Python
+- name: 🏆 Nagios
+  level: 100
+- name: 🏆 Kubernetes
   level: 95
-- name: Bash
+- name: 🏆 Bash
   level: 95
-- name: Nagios
-  level: 100
+- name: 👱 Creative
+  level: 95
+- name: 👱 Innovative
+  level: 95
+- name: 📢 Teacher
+  level: 95
 - name: HTML/CSS
   level: 90
 - name: JavaScript [ES6]
   level: 80
 - name: API REST
   level: 80
-- name: Godot Engine
+- name: 🎮 Godot Engine
   level: 50
-- name: SDL
+- name: 🎮 SDL
   level: 50
-- name: PyGame
+- name: 🎮 PyGame
   level: 50
+- name: 🐻 Golang
+  level: 30
+- name: 🐻 2D/3D gfx
+  level: 30
 
-knowledge: Passion for Linux and Open source in general. My focus is now on containerized workloads with Docker / k8s. Eaten by a Python ❤️.
+knowledge: Strong IT skills. Eaten by a Python 🐍. Focus on containerized workloads using Docker/Kubernetes. Teach, learn, discuss with people to all grow up.
 
 projects:
 - name: docker-ttrss
@@ -131,16 +141,6 @@ projects:
   platform: Docker image
   description: Build RPMs for Netdata, the distributed real-time performance and health monitoring system.
   url: https://github.com/bigbrozer/netdata-rpm-builder
-
-- name: atom-aligner-puppet
-  platform: CoffeeScript
-  description: Puppet support for atom-aligner plugin within Atom editor.
-  url: https://github.com/bigbrozer/atom-aligner-puppet
-
-- name: netplugins
-  platform: Python
-  description: Collection of various networking plugins for Nagios.
-  url: https://github.com/bigbrozer/netplugins
 
 hobbies:
 - name: Dad
@@ -164,7 +164,7 @@ contributions:
   description: Some docker-ized applications ready to use.
   url: https://hub.docker.com/u/bigbrozer/
 
-- name: Nagios Exchange Plugins
+- name: Nagios Plugins
   description: Some Nagios plugins out-sourced to open source community.
   url: https://exchange.nagios.org/directory/Owner/bigbrozer/1
 
@@ -173,7 +173,6 @@ contact:
   phone:
   street:
   city: Montbéliard
-  website: http://aboutme.vinzworld.fr
   github: bigbrozer
   twitter: vbezac
   linkedin: bigbrozer
