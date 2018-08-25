@@ -28,6 +28,7 @@
 
       <a :href="'mailto:' + person.contact.email">
         <div class="block-marged txt-full-white">
+          <i class="fa fa-envelope contact-icon"></i>
           {{ person.contact.email }}
         </div>
       </a>
@@ -37,6 +38,8 @@
       </div>
 
       <div class="social-container">
+        <h3>Networks</h3>
+
         <a v-if="person.contact.website"
           :href="person.contact.website">
 
@@ -66,6 +69,16 @@
           </span>
         </a>
 
+        <a v-if="person.contact.linkedin"
+          :href="'https://www.linkedin.com/in/' + person.contact.linkedin"
+          class="external-link">
+
+          <i class="fa fa-linkedin contact-icon"></i>
+          <span class="block-marged txt-full-white">
+            {{ person.contact.linkedin }}
+          </span>
+        </a>
+
         <a v-if="person.contact.codefights"
           :href="'https://codefights.com/profile/' + person.contact.codefights"
           class="external-link">
@@ -92,7 +105,7 @@
       </div>
 
       <div class="hobbies-container">
-        <!-- <span class="subheadline">Hobbies</span> -->
+        <h3>Hobbies</h3>
         <div class="hobbies-content">
           <a v-for="(hobby, index) in person.hobbies" :key="index"
             class="hobby-item"
@@ -122,7 +135,7 @@
             :href="experience.website">
 
             <span class="section-content__header"> {{ experience.position }}</span>
-            <span class="section-content__subheader"> {{ experience.company }}</span>
+            <span class="section-content__subheader"> {{ experience.company }} <i v-if="experience.website" class="fa fa-external-link"></i></span>
             <div class="section-content__text"> {{ experience.timeperiod }}</div>
             <span class="section-content__text--light"> {{ experience.description }}</span>
           </a>
@@ -140,8 +153,8 @@
             class="section-content__item"
             :href="education.website">
 
-            <span class="section-content__header"> {{ education.school }} </span>
-            <span class="section-content__subheader">{{ education.degree }}</span>
+            <span class="section-content__header"> {{ education.school }}</span>
+            <span class="section-content__subheader">{{ education.degree }} <i v-if="education.website" class="fa fa-external-link"></i></span>
             <span class="section-content__text"> {{ education.timeperiod }} </span>
             <span class="section-content__text--light"> {{ education.description }} </span>
           </a>
@@ -160,7 +173,7 @@
             class="section-content__item"
             :href="project.url">
 
-            <span class="section-content__header"> {{ project.name }} </span>
+            <span class="section-content__header"> {{ project.name }} <i v-if="project.url" class="fa fa-external-link"></i></span>
             <span class="section-content__subheader">{{ project.platform }}</span>
             <span class="section-content__text"> {{ project.description }} </span>
             <span class="section-content__text--light"> {{ project.url }} </span>

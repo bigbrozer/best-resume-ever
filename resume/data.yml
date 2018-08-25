@@ -45,47 +45,47 @@ experience:
 education:
 - degree: Training - Kubernetes
   timeperiod: 2018
-  description: Ambient-IT
+  school: Ambient-IT
   website: https://www.ambient-it.net/formation/formation-kubernetes/
 
 - degree: Training - Private Cloud, mise en oeuvre avec OpenStack
   timeperiod: 2017
-  description: Orsys
+  school: Orsys
   website: http://www.orsys.fr/formation-openstack-private-cloud.html
 
 - degree: Training - Docker, créer et administrer vos conteneurs virtuels d'applications
   timeperiod: 2016
-  description: Orsys
+  school: Orsys
   website: http://www.orsys.fr/formation-docker-conteneurs-virtuels.html
 
 - degree: Training - AngularJS, maîtriser le Framework JavaScript de Google
   timeperiod: 2014
-  description: Orsys
+  school: Orsys
   website: http://www.orsys.fr/formation-angularjs-framework-javascript-google.html
 
 - degree: Training - Python, programmation objet
   timeperiod: 2013
-  description: Orsys
+  school: Orsys
   website: http://www.orsys.fr/formation-python-programmation-objet.html
 
 - degree: "Training - Programmation en C#: Travaux pratiques"
   timeperiod: 2010
-  description: Learning Tree
+  school: Learning Tree
   website: https://www.learningtree.com/courses/419/introduction-to-c-programming-c-training/
 
 - degree: "Training - Programmation Java: Travaux pratiques"
   timeperiod: 2008
-  description: Learning Tree
+  school: Learning Tree
   website: https://www.learningtree.com/courses/471/introduction-to-java-programming-java-programming-course/
 
 - degree: 2y Technical IT
   timeperiod: September 2001 - July 2003
-  description: Université de Franche-Comté
+  school: Université de Franche-Comté
   website: http://mmimontbeliard.com/formation-mmi
 
 - degree: Bachelor Degree
   timeperiod: September 1999 - July 2001
-  description: Lycée Jules Viette
+  school: Lycée Jules Viette
 
 # skill level goes 0 to 100
 skills:
@@ -176,6 +176,7 @@ contact:
   website: http://aboutme.vinzworld.fr
   github: bigbrozer
   twitter: vbezac
+  linkedin: bigbrozer
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `
