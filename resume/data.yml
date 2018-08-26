@@ -101,11 +101,9 @@ skills:
   level: 95
 - name: 🏆 Bash
   level: 95
-- name: 👱 Creative
-  level: 95
 - name: 👱 Innovative
   level: 95
-- name: 📢 Teacher
+- name: 📢 Teaching
   level: 95
 - name: HTML/CSS
   level: 90
@@ -124,7 +122,7 @@ skills:
 - name: 🐻 2D/3D gfx
   level: 30
 
-knowledge: Strong IT skills. Eaten by a Python 🐍. Focus on containerized workloads using Docker/Kubernetes. Teach, learn, discuss with people to all grow up.
+knowledge: Strong IT skills. Eaten by a Python 🐍. Good teacher. Never stop learning.
 
 projects:
 - name: docker-ttrss
